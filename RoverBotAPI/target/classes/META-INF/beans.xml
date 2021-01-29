@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beanio  xmlns="http://www.beanio.org/2012/03"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+
+    <stream name="RoverBot" format="xml">
+        <record name="RoverBot" class="pojo.RoverBot">
+            <segment name="Position" class="pojo.Position" xmlType="element">
+                <field name="Direction"/>
+                <field name="X"/>
+                <field name="Y"/>
+            </segment>
+            <segment name="Moves">
+                <segment name="Move" class="pojo.Move" collection="list" minOccurs="1" maxOccurs="unbounded">
+                    <field name="Order"/>
+                    <field name="L" nillable="true"/>
+                    <field name="R" nillable="true"/>
+                    <field name="F" nillable="true"/>
+                    <field name="B" nillable="true"/>
+                </segment>
+            </segment>
+        </record>
+    </stream>
+</beanio>

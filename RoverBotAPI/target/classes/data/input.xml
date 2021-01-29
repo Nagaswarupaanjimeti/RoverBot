@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<RoverBot>
+    <Position>
+        <Direction>N</Direction>
+        <X>10</X>
+        <Y>10</Y>
+    </Position>
+    <Moves>
+        <Move>
+            <Order>1</Order>
+            <L>90</L>
+            <F>10</F>
+        </Move>
+        <Move>
+            <Order>2</Order>
+            <R>180</R>
+            <B>20</B>
+        </Move>
+    </Moves>
+</RoverBot>
